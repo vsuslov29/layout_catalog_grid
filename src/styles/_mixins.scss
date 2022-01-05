@@ -1,0 +1,5 @@
+@mixin catalog-grid($min-width, $columns-number) {
+  @media (min-width:$min-width) {
+    grid-template-columns: repeat($columns-number, $card-width);
+  }
+}

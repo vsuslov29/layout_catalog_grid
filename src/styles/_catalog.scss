@@ -1,9 +1,7 @@
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-
-  max-width: 944px;
-  margin: 0 auto;
+  display: grid;
+  gap: 48px;
+  justify-content: center;
 
   &__card {
     display: flex;
@@ -13,10 +11,9 @@
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 48px;
   }
 
-  &__card:not(:nth-child(4n)) {
-    margin-right: 48px;
-  }
+  @include catalog-grid(488px, 2);
+  @include catalog-grid(768px, 3);
+  @include catalog-grid(1024px, 4);
 }
