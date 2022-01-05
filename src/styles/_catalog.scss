@@ -1,6 +1,6 @@
 .catalog {
   display: grid;
-  gap: 48px;
+  gap: $catalog-gap;
   justify-content: center;
 
   &__card {
@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     width: $card-width;
-    height: 300px;
+    height: $card-height;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
